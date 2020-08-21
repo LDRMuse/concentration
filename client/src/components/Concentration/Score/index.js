@@ -27,7 +27,10 @@ export const Score = ({ gameOver, toggle, pairsOfCards }) => {
         {convertSecondsToMinutesAndSeconds(time)}
       </p>
       {/* Prop drilling  */}
-      <Form gameOver={gameOver} pairsOfCards={pairsOfCards} time={convertSecondsToMinutesAndSeconds(time)}/>
+      <Form
+      gameOver={gameOver}
+      pairsOfCards={pairsOfCards}
+      time={convertSecondsToMinutesAndSeconds(time)}/>
     </Fragment>
   )
 }
