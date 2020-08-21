@@ -18,4 +18,6 @@ const client = new MongoClient(process.env.MONGODB_URI, {
 
     process.exit(0);
   });
-});
+})();
+
+export default client;
