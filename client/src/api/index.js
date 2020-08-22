@@ -27,7 +27,7 @@ export default {
       return await addScoreRes.json()
   },
 
-  async getScore(newScoreDeets) {
+  async getScores(newScoreDeets) {
     const getScores = await fetch(
       "http://localhost:5000/scores/scores")
 
