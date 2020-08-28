@@ -7,7 +7,7 @@ const router = new Router();
 router.get('/', async (_, res) => {
   const mongoRes = await getScores();
   res.status(200);
-  res.json(mongoRes);
+  res.json(getScores);
 });
 
 router.post('/add', async ({ body }, res) => {
