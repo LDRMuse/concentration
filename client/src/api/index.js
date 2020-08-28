@@ -16,7 +16,7 @@ export default {
 
   async addScore(newScoreDeets) {
     const addScoreRes = await fetch(
-      "http://localhost:5000/scores/add", {
+      "https://concentration-react-app.herokuapp.com/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -29,7 +29,7 @@ export default {
 
   async getScores(newScoreDeets) {
     const getScores = await fetch(
-      "http://localhost:5000/scores/scores")
+      "https://concentration-react-app.herokuapp.com/")
 
       return await getScores.json()
   },
