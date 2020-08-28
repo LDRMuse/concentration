@@ -29,7 +29,7 @@ export default {
 
   async getScores(newScoreDeets) {
     const getScores = await fetch(
-      "http://localhost:5000/scores/scores")
+      "http://localhost:5000/scores/")
 
       return await getScores.json()
   },
