@@ -29,7 +29,7 @@ export default {
 
   async getScores() {
     const getScores = await fetch(
-      "https://concentration-react-app.herokuapp.com/")
+      "http://localhost:5000/scores/")
 
       return await getScores.json()
   },
