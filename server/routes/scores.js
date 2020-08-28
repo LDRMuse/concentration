@@ -6,7 +6,7 @@ const router = new Router();
 
 router.get('/', async (_, res) => {
   const mongoRes = await getScores();
-  res.status;
+  res.status(200);
   res.json(getScores);
 });
 
