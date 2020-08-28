@@ -27,7 +27,7 @@ export default {
       return await addScoreRes.json()
   },
 
-  async getScores(newScoreDeets) {
+  async getScores() {
     const getScores = await fetch(
       "https://concentration-react-app.herokuapp.com/")
 
